@@ -22,19 +22,25 @@
 // alert(result);
 
 /* ----------Задание №2---------- */
-// let eggsCount = parseInt( prompt('Сколько яиц нужно сварить') );
+// let eggsCount = prompt('Сколько яиц нужно сварить');
 // let time = 0;
 // let zakaz = function (eggsCount, time) {
-//   for(let i = 0; i < eggsCount; i++) {
-//     if(0 === i % 8) {
-//       time += 5;
+//   if(eggsCount > 0) {
+//     for(let i = 0; i < Math.ceil(eggsCount / 8); i++) {
+//       if(eggsCount > 0) {
+//         time += 5;
+//       }
 //     }
+//   }
+//   if(eggsCount === null) {
+//     return 'Вы отменили ввод.'
 //   }
 //   if(isNaN(eggsCount) || eggsCount === '') {
 //     return 'Введите корректные данные';
 //   } else {
 //     return `Для варки ${eggsCount} яиц нужно ${time} минут`;
 //   }
+
 // }
 // let result = zakaz(eggsCount, time);
 
@@ -42,17 +48,32 @@
 
 
 /* ----------Задание №3---------- */
-let getEvenSum = function() {
-  for(let i = 0; i < getEvenSum.length; i++) {
-    s
-    return 'OK';
-  }
-}
-let result = getEvenSum(4, 3, 1, 2, 5, 10, 6, 7, 8);
-console.log(result)
+// let odd = [0];
+// let even = [0];
+// let getEvenSum = function (...arguments) {
+//   for (let nums in arguments) {
+//     arguments[nums] / 2
+//   }
+// }
 
+// let result = getEvenSum(4, 3, 1, 2, 5, 10, 6, 7, 8);
+// console.log(result);
 
 /* ----------Задание №4---------- */
-let checkExam = function (reshenie, otvetUchenika) {
-  
-}
+// let examBalls = 0;
+// let checkExam = function (reshenie, otvet) {
+//   for(let i = 0; i < 4; i++) {
+//     if(reshenie[i] === '' || otvet[i] === ''){
+//       return 'Введите корректные данные';
+//     } else if(reshenie[i] === otvet[i]){
+//       examBalls += 4;
+//     } else {
+//       examBalls -= 1
+//     }
+//   }
+//   console.log('Ваши результаты равны: ' + examBalls + ' баллам')
+// }
+
+
+// let result = checkExam(["a", "a", "b", "b"], ["a", "a", "b", "b"]);
+// console.log(result);
